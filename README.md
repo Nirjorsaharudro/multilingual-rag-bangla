@@ -35,4 +35,5 @@ Simply open index.html in your web browser.
 No server setup is required for the frontend.
 
 🎥 Demo
+Click on the image to download the demo video.
 [![Watch the demo](demo.png)](./Rag.mp4)
