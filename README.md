@@ -1,6 +1,7 @@
 📚 multilingual-rag-bangla
 
 This project implements a Retrieval-Augmented Generation (RAG) pipeline that supports both English and Bangla queries. It retrieves context from the HSC 2026 Bangla 1st Paper textbook and generates meaningful, grounded answers based on the retrieved content.
+
 🛠️ Setup Instructions
 1. Activate the Poetry Environment
 
@@ -32,5 +33,6 @@ python main.py
 
 Simply open index.html in your web browser.
 No server setup is required for the frontend.
+
 🎥 Demo
-<video width="800" controls> <source src="Rag.mp4" type="video/mp4"> Your browser does not support the video tag. </video> 
+[![Watch the demo](demo.png)](./Rag.mp4)
