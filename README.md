@@ -1,6 +1,16 @@
 📚 multilingual-rag-bangla
 
-This project implements a Retrieval-Augmented Generation (RAG) pipeline that supports both English and Bangla queries. It retrieves context from the HSC 2026 Bangla 1st Paper textbook and generates meaningful, grounded answers based on the retrieved content.
+This project implements a Retrieval-Augmented Generation (RAG) pipeline that supports both English and Bangla queries. It retrieves context from the HSC 2026 Bangla 1st Paper textbook and generates meaningful, grounded answers.
+
+The system employs a hybrid retrieval strategy that combines:
+
+   * MultiVectorRetriever and ParentDocumentRetriever for semantic retrieval of dense text chunks,
+
+   * BM25 for sparse, keyword-based search to enhance precision on short or exact-match queries.
+
+Document embeddings are stored and queried using FAISS as the vector store. For PDF preprocessing, the system uses the multilingual-pdf2text module, which integrates Tesseract OCR with Bengali language support (tesseract-ocr-ben) to accurately extract text from scanned or image-based PDFs.
+
+This architecture ensures robust retrieval and accurate response generation for multilingual educational content.
 
 🛠️ Setup Instructions
 1. Activate the Poetry Environment
