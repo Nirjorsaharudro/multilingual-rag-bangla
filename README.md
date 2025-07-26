@@ -4,11 +4,13 @@ This project implements a Retrieval-Augmented Generation (RAG) pipeline that sup
 
 The system employs a hybrid retrieval strategy that combines:
 
-   * MultiVectorRetriever and ParentDocumentRetriever for semantic retrieval of dense text chunks,
+    * MultiVectorRetriever and ParentDocumentRetriever for semantic retrieval of dense text chunks,
 
-   * BM25 for sparse, keyword-based search to enhance precision on short or exact-match queries.
+    * BM25 for sparse, keyword-based search to enhance precision on short or exact-match queries.
 
 Document embeddings are stored and queried using FAISS as the vector store. For PDF preprocessing, the system uses the multilingual-pdf2text module, which integrates Tesseract OCR with Bengali language support (tesseract-ocr-ben) to accurately extract text from scanned or image-based PDFs.
+
+Communication between backend and frontend is handled via FastAPI WebSocket, which manages conversation memory by maintaining a 2–3 message history for context. This memory can be expanded by integrating a database for persistent and scalable context retention.
 
 This architecture ensures robust retrieval and accurate response generation for multilingual educational content.
 
