@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "multimodal rag"
+version = "0.1.0"
+description = ""
+authors = ["Nirjorsaharudro <postman.dml@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+unstructured = {extras = ["all-docs"], version = "^0.18.1"}
+pillow = "^11.2.1"
+lxml = "^6.0.0"
+chromadb = "^1.0.13"
+tiktoken = "^0.9.0"
+langchain = "^0.3.26"
+langchain-community = "^0.3.26"
+langchain-openai = "^0.3.26"
+langchain-groq = "^0.3.4"
+python-dotenv = "^1.1.1"
+rank-bm25 = "^0.2.2"
+faiss-cpu = "^1.11.0"
+langchain-mistralai = "^0.2.11"
+multilingual-pdf2text = "^1.1.0"
+scikit-learn = "^1.7.1"
+fastapi = "^0.116.1"
+environs = "^14.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
