@@ -132,7 +132,7 @@ Response
 
 Backend maintains short-term memory (last 2 query-response pairs) using conversation_memory.
 
-6. ❓ Must-Answer Questions
+<!-- 6. 
 # What method or library did you use to extract the text, and why? Did you face any formatting challenges with the PDF content?
 I used multilingual_pdf2text, which leverages pytesseract (with tesseract-ocr-ben) to handle Bangla text. It was chosen for its OCR accuracy with complex fonts and mixed layouts. Some line breaks and paragraph boundaries were inconsistent, which required post-processing. I have also tried to use unstructured but it lacks inaccurate Bengali text.
 
@@ -164,5 +164,5 @@ This combined setup increases the chance of retrieving relevant content even whe
 
 
 # Do the results seem relevant? If not, what might improve them?
-Yes, the results are generally relevant. But for better accuracy i can try graph rag which will keep key nodes and relationships with vector searching for semantics similarity.
+Yes, the results are generally relevant. But for better accuracy i can try graph rag which will keep key nodes and relationships with vector searching for semantics similarity. -->
 
